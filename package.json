@@ -1,7 +1,7 @@
 {
   "name": "react-unform",
-  "version": "0.0.1",
-  "main": "/src/index.ts",
+  "version": "2.0.1",
+  "main": "index.ts",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -13,10 +13,9 @@
   ],
   "scripts": {
     "start": "webpack-cli serve --mode=development --env development --open --hot",
-    "build": "npx tsc --module ES6",
-    "prepub": "copy package.json dist",
-    "pub": "cd dist & npm publish",
-    "postpub": "cd dist & del package.json"
+    "build": "npx tsc",
+    "prepub": "copy package.json build",
+    "pub": "cd build & npm publish"
   },
   "author": {
     "name": "Pedro Mota",
